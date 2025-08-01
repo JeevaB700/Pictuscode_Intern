@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>task-8</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Run when the page loads
+            window.onload = function () {
+                const dobInput = document.getElementById("dob");
+                const today = new Date();
+                const tenYearsAgo = new Date(today.getFullYear() - 10, today.getMonth(), today.getDate());
+                const maxDate = tenYearsAgo.toISOString().split('T')[0]; // Format as yyyy-mm-dd
+
+                dobInput.max = maxDate;
+            };
+        </script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                <div class="form-box" style="height: 710px; width: 90%;">
+                    <h1 class="text-center p-1">Register Here</h1>
+                    <div class="ms-5">
+                        <form action="insert.php" method="post">
+                            <div class="input pb-4">
+                                Name:<br> 
+                                <input type="text" name="name" id="name" placeholder="Enter Name" required><br>
+                            </div>
+                            <div class="input pb-4">
+                                User ID:<br>
+                                <input type="number" name="user_id" id="user_id" placeholder="Enter Unique User ID" required><br>
+                            </div>
+                            <div class="input pb-4">
+                                Email Address: <br>
+                                <input type="email" name="mail" id="mail" placeholder="Enter Email Address" required><br>
+                            </div>
+                            <div class="input pb-4">
+                                Password<br>
+                                <input type="password" name="pass" id="pass" placeholder="Enter Password" required><br>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div class="input pb-4 me-2">
+                                    Birth Date:<br>
+                                    <input type="date" name="dob" id="dob" required><br>
+                                </div>
+                                <div class="mt-2 me-5 pe-5">
+                                    Gender:<br>
+                                    <div class="d-flex mt-3">
+                                        <div class="me-5">
+                                            <input type="radio" name="gender" id="gender" value="male" checked>Male
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="gender" id="gender" value="female">Female<br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-center mt-2 mb-3 me-5">
+                                    <button type="submit">Register</button>
+                                </div>
+                                <div class="text-center me-5">
+                                    <p style="font-size: 18px;">Already have an account? <a class="reg" href="login.php">Login here!</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </body>
+</html>
