@@ -1,0 +1,64 @@
+.nav-item .nav-link:hover{
+    color: red;
+}
+.nav-item .dropdown-menu{
+    background-color: red;
+}
+.nav-item .dropdown-item{
+    color: white;
+}
+
+.navbar-brand img{
+    width: 150px;
+    height: 50px;
+}
+.navbar-nav .nav-item{
+    padding-left: 30px;
+}
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.2); /* light white transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* optional glass border */
+}
+
+.custom-navbar.scrolled {
+  background-color: white !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 90px;
+}
+
+.right-center {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  text-align: right;
+  color: white;
+}
+.carousel-caption h1 {
+  font-size: 50px;
+  font-weight: bold;
+  width: 75%;
+}
+
+
+.carousel-caption p {
+  font-size: 20px;
+  width: 70%;
+  color: black;
+}
+.speciality{
+    background-image: url("https://gologme.com/wp-content/uploads/2025/03/Vector.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.call{
+    background-image: url("https://gologme.com/wp-content/uploads/2025/03/Group-1597883361.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}

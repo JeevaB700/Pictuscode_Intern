@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="signin-link">Already a Member? <a href="#">Sign in</a></div>
+
+    <h1>Sign up</h1>
+    
+    <div>
+      <div class="navigation">
+        <div style="border-radius: 50%; height: 25px; width: 25px; background-color: orange; color: white; text-align: center;">1</div>
+        <div style="border-radius: 50%; height: 25px; width: 25px; background-color: #e5e2e2; color: rgb(143, 143, 143); text-align: center;">2</div>
+        <div style="border-radius: 50%; height: 25px; width: 25px; background-color: #e5e2e2; color: rgb(143, 143, 143); text-align: center;">3</div>
+      </div>
+      <div class="navigation-text">
+        <div>Basic Details</div>
+        <div>Contact Details</div>
+        <div>Verification</div>
+      </div>
+    </div>
+    <form class="signup-form">
+      <h2>Basic Details</h2>
+
+      <div class="row">
+        <div class="field half-width">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter Full Name" style="border-radius: 20px; border-style:none">
+        </div>
+        <div class="photo-upload">
+          <label for="upload-photo" class="photo-label">
+            <div class="upload-icon">
+              <span class="material-icons camera">photo_camera</span>
+            </div>
+            <span class="photo-text">Add Photo</span>
+          </label>
+          <input type="file" id="upload-photo" hidden style="border-radius: 20px; border-style:none" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Constituency</label>
+        <input type="text" placeholder="Search Constituency" style="border-radius: 20px; border-style:none">
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Select Party You Work For</label>
+          <select style="border-radius: 20px; border-style: none;">
+            <option>Party 1</option>
+            <option>Party 2</option>
+            <option>Party 3</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Position</label>
+          <select style="border-radius:20px; border-style:none">
+            <option>Position 1</option>
+            <option>Position 2</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Date of Birth</label>
+          <input type="date" style="border-radius: 20px; border-style:none">
+        </div>
+        <div class="field">
+          <label>Gender</label>
+          <div class="gender-options">
+            <label class="custom-radio">
+              <input type="radio" name="gender" checked style="border-radius: 20px; border-style:none">
+              <span class="tick-circle">✔</span>
+              <span class="label-text">Male</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="gender">
+              <span class="tick-circle">✔</span>
+              <span class="label-text">Female</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Vision & Mission</label>
+        <textarea placeholder="Enter your vision & mission" style="border-radius: 20px; border-style: none;"></textarea>
+      </div>
+
+      <div class="edu-section">
+        <div class="edu-header">
+          <h2>Education</h2>
+          <a href="#">+ Add More Education</a>
+        </div>
+
+        <div class="edu-box">
+          <div class="row">
+            <div class="field">
+              <label>Degree Name</label>
+              <input type="text" placeholder="Enter Degree" style="border-radius: 20px; border-style:none">
+            </div>
+            <div class="field">
+              <label>College/University</label>
+              <input type="text" placeholder="Enter College/University" style="border-radius: 20px; border-style:none">
+            </div>
+            <div class="field">
+              <label>Graduation Year</label>
+              <input type="text" placeholder="YYYY" style="border-radius: 20px; border-style:none">
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button type="button" class="cancel-btn">Cancel</button>
+            <button type="button" class="save-btn">Save</button>
+          </div>
+        </div>
+      </div>
+
+ <div class="saved-education">
+  <div class="edu-dummy-wrapper">
+    <div class="edu-dummy-entry">
+      <div class="edu-item">
+        <label>Degree</label>
+        <div class="edu-value">B.E CSE</div>
+      </div>
+      <div class="edu-item">
+        <label>College / University</label>
+        <div class="edu-value">VIT University</div>
+      </div>
+      <div class="edu-item">
+        <label>Graduation Year</label>
+        <div class="edu-value">2023</div>
+      </div>
+    </div>
+    <div class="edu-actions-vertical">
+      <span class="material-icons action-icon">edit</span>
+      <span class="material-icons action-icon">delete</span>
+    </div>
+  </div>
+</div>
+
+      <button type="submit" class="main-btn">Save & Continue</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .navbar-white {
+      background-color: white !important;
+    }
+    .navbar-nav .nav-link {
+      color: black;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: red;
+    }
+    .dropdown-menu .dropdown-item:hover{
+        color: red;
+        background-color: rgb(244, 238, 238);
+    }
+    .gradient-hr {
+        border: none;
+        height: 6px;
+        width: 40px;
+        background-image: linear-gradient(to right, #dc022e, #ff0000);
+    }
+    .gradient-hr2 {
+        border: none;
+        height: 6px;
+        width: 40px;
+        background-image: linear-gradient(to right, #dc022e, #ff0000);
+    }
+    .serv-img {
+        width: 80px;
+        height: 80px;
+        background-color: #dc022e;
+        border-radius: 50%;
+    }
+    .ternmet{
+        background-image: url(https://www.pictuscode.com/images/rentmate_bg.webp);
+        color: white;
+        background-size: cover;           /* Scale image to cover entire div */
+        background-position: center;      /* Center the image */
+        background-repeat: no-repeat;
+    }
+    h5{
+      font-size: 17px;
+    }
